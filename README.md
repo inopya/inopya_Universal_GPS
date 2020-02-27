@@ -20,7 +20,7 @@ una 'gran perdida' de tiempo a priori, pero con sentencias ***CMR*** a veces nec
 'Gastar' un segundo para no obtener datos validos si que es perder el tiempo. 
 Puesto que se disponde de un mecanismo de control  (transparente al usuario) que interrumpe la escucha del GPS una vez que encuentra datos validos del tipo pedido, aplicar un margen grande en la busqueda de datos no supone mas que no desaprovehar intentos de muestreo.
 
-Pero esta a nuestra disposición el metodo ***timeout(uint16_t tiempo_max)*** con el que podemos indicar el tiempo máximo que la libreria permanece a la escucha del GPS (tiempo expresado en milisegundos).
+Pero está a nuestra disposición el metodo ***timeout(uint16_t tiempo_max)*** con el que podemos indicar el tiempo máximo que la libreria permanece a la escucha del GPS (tiempo expresado en milisegundos).
 
 Podemos decidir que tipo de sentencias decodificamos.
 
