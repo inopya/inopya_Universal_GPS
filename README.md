@@ -33,7 +33,7 @@ que nos informa del modo en que estamos trabajando (0,1,2)
 
 para actualizar los datos recogidos del gps:
 
-##Usaremos el metodo ***NEO_gps.get()***            
+**Usaremos el metodo** ***NEO_gps.get()***            
 
 Loss datos disponibles son:
 
