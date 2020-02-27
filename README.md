@@ -29,19 +29,19 @@ que nos informa del modo en que estamos trabajando (0,1,2)
 
 datos disponibles:
 
-**float 	  latitud;  
-float 	  longitud; 
-float 	  altitud;  
-float 	  velocidad;
-float 	  course;  
-uint8_t   satelites;
-uint8_t   hora; 
-uint8_t   minuto;   
-uint8_t   segundo;  
-uint8_t   dia;  
-uint8_t   mes;  
-uint16_t  year;
-uint32_t  data_time;** 
+  float 	  latitud;  
+  float 	  longitud; 
+  float 	  altitud;  
+  float 	  velocidad;
+  float 	  course;  
+  uint8_t   satelites;
+  uint8_t   hora; 
+  uint8_t   minuto;   
+  uint8_t   segundo;  
+  uint8_t   dia;  
+  uint8_t   mes;  
+  uint16_t  year;
+  uint32_t  data_time; 
   
 Segun el ejemplo anterior, una vez creado el objeto **NEO_gps**, podemos acceder a la posicion:
 
