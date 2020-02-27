@@ -2,10 +2,12 @@
 Libreria básica para GPS NEO6, NEO7 y NEO8
 Esta pensada para escuchar  al GPS en pines que no sean puerto serie Hardware, por tanto necesita de la libreria softSerial
 
-Para usarla debemos crear un puerto serie que destinaremos al GPS. 
+Para usarla debemos crear un puerto serie que destinaremos al GPS.
+
 ***SoftwareSerial gpsPort(PIN_Rx, PIN_Tx);***
 
 e inicializaremos una instancia del GPS pasandole como argumento el puerto serie software
+
 ***Universal_GPS_inopya NEO_gps(&gpsPort);*** 
 
 De esta forma se simplifica el acceso a la recogida  de datos evitandonos el control de escucha del puerto
