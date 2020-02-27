@@ -10,6 +10,10 @@ e inicializaremos una instancia del GPS pasandole como argumento el puerto serie
 
 ***Universal_GPS_inopya NEO_gps(&gpsPort);*** 
 
+En el ***setup()***  ebemos inicializar el GPS de la siguente forma:
+
+***NEO_gps.begin(9600);***  //iniciamos a la velocidad standard
+
 De esta forma se simplifica el acceso a la recogida  de datos evitandonos el control de escucha del puerto
 Por defecto la busqueda de datos del GPS esta programada para emplear hasta 1200ms, 
 una 'gran perdida' de tiempo a priori, pero con sentencias ***CMR*** a veces necesita incluso mas de un segundo.
