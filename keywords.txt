@@ -18,3 +18,4 @@ dia						KEYWORD2
 mes						KEYWORD2
 year					KEYWORD2
 data_time				KEYWORD2
+timeout					KEYWORD2

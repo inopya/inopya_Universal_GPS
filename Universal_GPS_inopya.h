@@ -30,7 +30,8 @@ class Universal_GPS_inopya
 	uint8_t   dia;  
 	uint8_t   mes;  
 	uint16_t  year;
-	uint32_t  data_time;  
+	uint32_t  data_time;
+	
 
     Universal_GPS_inopya(SoftwareSerial * ss);	
 	
@@ -39,6 +40,7 @@ class Universal_GPS_inopya
 
 	void set_mode(uint8_t modo);
 	uint8_t get_mode();
+	void timeout(uint16_t timeout);
 
   /*  ------ private ------  */              
   private:
@@ -48,6 +50,7 @@ class Universal_GPS_inopya
 	volatile bool _updated_ok = false;
 	volatile bool _updated_GGA = false;
 	volatile bool _updated_RMC = false;
+	uint16_t _timeout = 1200;
 	
 	uint8_t _mode = 0;  		// por defecto procesa GxGGA y GxRMC,
 								// hora, latitud, longitud, altitud, nº satelites, velocidad, course y fecha

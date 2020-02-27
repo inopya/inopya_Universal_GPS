@@ -26,6 +26,12 @@ void Universal_GPS_inopya::set_mode(uint8_t modo)
 	
 }
 
+
+void Universal_GPS_inopya::timeout(uint16_t timeout)
+{
+	_timeout = timeout;
+}
+
 uint8_t Universal_GPS_inopya::get_mode()
 {
 	return _mode;
@@ -43,7 +49,7 @@ void Universal_GPS_inopya::get(void)
 			char c = serial->read();  		//leer un caracter del bufer del gps
 			_updated_ok = almacenar(c);   	//almacenar el carcter en el buffer
 		}
-    }while ((millis() - inicio < 1200) && (_updated_ok == false));  //a veces puede tardar hasta un segundo en entregar toda la informaion
+    }while ((millis() - inicio < _timeout) && (_updated_ok == false));  //a veces puede tardar hasta un segundo en entregar toda la informaion
 
 	if(_updated_ok==true){
 		data_time = millis();
