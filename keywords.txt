@@ -1,8 +1,8 @@
 Universal_GPS_inopya	KEYWORD1
 
-begin					KEYWORD2
-get						KEYWORD2
-set_mode			    KEYWORD2
+begin					  KEYWORD2
+get						  KEYWORD2
+set_mode        KEYWORD2
 get_mode				KEYWORD2
 
 latitud					KEYWORD2
@@ -11,11 +11,11 @@ altitud					KEYWORD2
 velocidad				KEYWORD2
 course					KEYWORD2
 satelites				KEYWORD2
-hora					KEYWORD2
+hora					  KEYWORD2
 minuto					KEYWORD2
 segundo					KEYWORD2
-dia						KEYWORD2
-mes						KEYWORD2
-year					KEYWORD2
+dia						  KEYWORD2
+mes						  KEYWORD2
+year					  KEYWORD2
 data_time				KEYWORD2
 timeout					KEYWORD2
