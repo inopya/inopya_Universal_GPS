@@ -22,7 +22,7 @@ Puesto que se disponde de un mecanismo de control  (transparente al usuario) que
 
 Pero está a nuestra disposición el metodo ***timeout(uint16_t tiempo_max)*** con el que podemos indicar el tiempo máximo que la libreria permanece a la escucha del GPS (tiempo expresado en milisegundos). Tener en cuenta que un tiempo muy pequeño puede tener como consecuencia que se obtengan muestras validas desde el GPS.
 
-Podemos decidir que tipo de sentencias decodificamos.
+Podemos decidir que tipo de sentencias decodificamos. Por defecto modo 0, se decodifica *GNGGA/GPGGA y GNCMR/GPCMR*.
 
 **Disponible el método** ***set_mode(uint8_t modo)***  
 que puede tomar 3 valores:
