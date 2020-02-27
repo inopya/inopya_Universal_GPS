@@ -22,16 +22,19 @@ Puesto que se disponde de un mecanismo de control  (transparente al usuario) que
 
 Podemos decidir que tipo de sentencias decodificamos.
 
-##Disponible el método **set_mode(uint8_t modo)**  
+**Disponible el método** ***set_mode(uint8_t modo)***  
 que puede tomar 3 valores:
 - 0, decodifica todo, *GNGGA/GPGGA y GNCMR/GPCMR*.
 - 1, decodifica solo *GNGGA/GPGGA*.
 - 2, decodifica solo *GNCMR/GPCMR*.
 
-##Disponible el método **get_mode()** 
+**Disponible el método** ***get_mode()*** 
 que nos informa del modo en que estamos trabajando (0,1,2)
 
-datos disponibles:
+para actualizar los datos recogidos del gps:
+**Usaremos el metodo** ***NEO_gps.get()***            
+
+Loss datos disponibles son:
 
   float 	  latitud;  
   float 	  longitud; 
